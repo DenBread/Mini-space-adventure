@@ -10,8 +10,8 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Asteroid"))
         {
-            GameObject gameObject = Instantiate(_effect, _pointEffect.transform.position, Quaternion.identity);
-            Destroy(gameObject, 3);
+            GameObject gameObject = Instantiate(_effect, transform.position, Quaternion.identity);
+            Destroy(gameObject, 1f);
         }
     }
 }
